@@ -17,7 +17,6 @@
             100% 100%,
             0% 100%,
             0 100%);
-    background: #1698d9;
     border-radius: 0px 12px 12px 12px;
     display: flex;
     justify-content: center;
@@ -93,7 +92,6 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: #1698d9;
     position: relative;
     left: 225px;
     bottom: 146px;

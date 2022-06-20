@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { colors } from '../data/colors'
 import css from './Card.module.css'
 
 
@@ -22,8 +23,9 @@ const Card = props => {
         setSelected(!selected)
     }
 
+    let background = colors.defaultColor
+
     let tagline = <p className={css.card__tagline}>{props.tagline}</p>
-    let background = '#1698d9'
 
     const wordLink = props.underlineWordLink
     let underline =
@@ -36,19 +38,19 @@ const Card = props => {
 
 
     if (soldout) {
-        background = '#b3b3b3'
+        background = colors.disabledColor
         underline = <p className={css.card__underline_disabled}>{props.soldoutText}</p>
     } if (selected && hovered) {
         if (counter >= 1) {
             tagline = <p className={css.card__tagline_rejected}>{props.taglineRejected}</p>
         }
-        background = '#e52e7a'
+        background = colors.selectedHoveredColor
         underline = <p className={css.card__underline}>{props.underlineSelected}</p>
     } if (selected === true && !hovered) {
-        background = '#d91667'
+        background = colors.selectedColor
         underline = <p className={css.card__underline}>{props.underlineSelected}</p>
     } if (!selected && hovered) {
-        background = '#2ea8e6'
+        background = colors.defaultHoveredColor
     }
 
     return (
