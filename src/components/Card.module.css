@@ -85,7 +85,7 @@
 .card__picture {
     width: 265px;
     height: 265px;
-    background-image: url('../assets/img/Cat.png');
+    background-image: url('../assets/img/pictureCat.png');
     background-size: cover;
 }
 
