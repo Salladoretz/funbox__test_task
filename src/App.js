@@ -2,6 +2,7 @@ import './App.css'
 import React from 'react'
 import Card from './components/Card'
 import { data } from './data/data'
+import { colors } from './data/colors'
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
                 underlineSelected={item.underlineSelected}
                 soldout={item.soldout}
                 soldoutText={item.soldoutText}
+                colors={colors}
               />
             ))}
           </div>

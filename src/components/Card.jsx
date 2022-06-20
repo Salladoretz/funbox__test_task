@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { colors } from '../data/colors'
 import css from './Card.module.css'
 
 
@@ -23,6 +22,7 @@ const Card = props => {
         setSelected(!selected)
     }
 
+    const colors = props.colors
     let background = colors.defaultColor
 
     let tagline = <p className={css.card__tagline}>{props.tagline}</p>
