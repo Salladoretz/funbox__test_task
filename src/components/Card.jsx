@@ -24,13 +24,16 @@ const Card = props => {
 
     let tagline = <p className={css.card__tagline}>{props.tagline}</p>
     let background = '#1698d9'
+
+    const wordLink = props.underlineWordLink
     let underline =
-        <p className={css.card__underline}>{props.underline}
-            <span
-                className={css.card__underline_decoration}
-                onClick={() => setSelected(true)}>купи.
-            </span>
-        </p>
+        <p className={css.card__underline}>
+            {props.underline.split(' ').map(item => item === wordLink
+                ? <span
+                    className={css.card__underline_decoration}
+                    onClick={() => setSelected(true)}>{item} </span>
+                : <span className={css.card__underline}>{item} </span>)}</p>
+
 
     if (soldout) {
         background = '#b3b3b3'

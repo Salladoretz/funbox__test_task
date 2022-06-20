@@ -134,7 +134,7 @@
 
 .card__underline_decoration {
     font-size: 13px;
-    text-decoration: underline;
+    text-decoration: underline dashed;
     color: #22a7e9;
     cursor: pointer;
 }

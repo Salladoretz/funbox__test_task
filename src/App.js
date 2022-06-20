@@ -23,7 +23,7 @@ const App = () => {
                 present={item.present}
                 weight={item.weight}
                 underline={item.underline}
-                underlineLink={item.underlineLink}
+                underlineWordLink={item.underlineWordLink}
                 underlineSelected={item.underlineSelected}
                 soldout={item.soldout}
                 soldoutText={item.soldoutText}

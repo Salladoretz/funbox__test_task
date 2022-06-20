@@ -8,8 +8,8 @@ export const data = [
         quantity: '10 порций',
         present: 'мышь в подарок',
         weight: 0.5,
-        underline: 'Чего сидишь? Порадуй котэ, ',
-        underlineLink: 'купи',
+        underline: 'Чего сидишь? Порадуй котэ, купи.',
+        underlineWordLink: 'купи.',
         underlineSelected: 'Печень утки разварная с артишоками.',
         soldout: false,
         soldoutText: 'Печалька, с фуа-гра закончился.'
@@ -23,8 +23,8 @@ export const data = [
         quantity: '40 порций',
         present: '2 мыши в подарок',
         weight: 2,
-        underline: 'Чего сидишь? Порадуй котэ, ',
-        underlineLink: 'купи',
+        underline: 'Чего сидишь? Порадуй котэ, купи.',
+        underlineWordLink: 'купи.',
         underlineSelected: 'Головы щучьи с чесноком да свежайшая сёмгушка.',
         soldout: false,
         soldoutText: 'Печалька, с рыбой закончился.'
@@ -38,8 +38,8 @@ export const data = [
         quantity: '100 порций',
         present: '5 мышей в подарок заказчик доволен',
         weight: 5,
-        underline: 'Чего сидишь? Порадуй котэ, ',
-        underlineLink: 'купи',
+        underline: 'Чего сидишь? Порадуй котэ, купи.',
+        underlineWordLink: 'купи.',
         underlineSelected: 'Филе из цыплят с трюфелями в бульоне.',
         soldout: true,
         soldoutText: 'Печалька, с курой закончился.'
