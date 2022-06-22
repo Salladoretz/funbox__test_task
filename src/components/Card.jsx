@@ -46,7 +46,7 @@ const Card = props => {
         }
         background = colors.selectedHoveredColor
         underline = <p className={css.card__underline}>{props.underlineSelected}</p>
-    } if (selected === true && !hovered) {
+    } if (selected && !hovered) {
         background = colors.selectedColor
         underline = <p className={css.card__underline}>{props.underlineSelected}</p>
     } if (!selected && hovered) {
