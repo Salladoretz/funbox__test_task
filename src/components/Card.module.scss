@@ -1,0 +1,145 @@
+.card {
+    width: 320px;
+    height: 509px;
+    color: white;
+    text-align: center;
+
+    .card__border {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        height: 480px;
+        clip-path:
+            polygon(0% 13.5%,
+                13.5% 0%,
+                100% 0%,
+                100% 0%,
+                100% 100%,
+                100% 100%,
+                0% 100%,
+                0 100%);
+        border-radius: 0px 12px 12px 12px;
+
+        .card__context {
+            display: flex;
+            flex-direction: column;
+            background: white;
+            width: 312px;
+            height: 472px;
+            clip-path:
+                polygon(0% 13.5%,
+                    13.5% 0%,
+                    100% 0%,
+                    100% 0%,
+                    100% 100%,
+                    100% 100%,
+                    1.5% 100%,
+                    0% 99%);
+            border-radius: 0px 8px 8px 8px;
+
+            .card__texts {
+                text-align: left;
+                padding: 21px 0px 0px 51px;
+                flex: 1 0;
+            }
+
+            .card__tagline {
+                color: #666666;
+                font-size: 16px;
+                margin: 0;
+            }
+
+            .card__tagline_rejected {
+                color: #e52e7a;
+                font-size: 16px;
+                margin: 0;
+            }
+
+            .card__brand {
+                color: black;
+                font-weight: bold;
+                font-size: 48px;
+                margin: 0;
+            }
+
+            .card__taste {
+                color: black;
+                font-weight: bold;
+                font-size: 24px;
+                margin: 0;
+                padding-bottom: 15px;
+            }
+
+            .card__qty {
+                color: #666666;
+                font-size: 14px;
+                margin: 0;
+                width: 127px;
+            }
+
+            .card__picture {
+                width: 265px;
+                height: 265px;
+                background-image: url('../assets/img/pictureCat.png');
+                background-size: cover;
+            }
+        }
+
+        .card__soldout {
+            position: absolute;
+            width: 320px;
+            height: 480px;
+            clip-path:
+                polygon(0% 13.5%,
+                    13.5% 0%,
+                    100% 0%,
+                    100% 0%,
+                    100% 100%,
+                    100% 100%,
+                    0% 100%,
+                    0 100%);
+            background: #b3b3b350;
+            border-radius: 0px 12px 12px 12px;
+        }
+    }
+
+    .card__oval {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: relative;
+        left: 225px;
+        bottom: 146px;
+
+        .card__ovalWeight {
+            font-size: 42px;
+            margin: 0;
+            padding-top: 9px;
+        }
+
+        .card__ovalKg {
+            font-size: 20px;
+            margin-top: -2px;
+        }
+    }
+
+    .card__underline {
+        font-size: 13px;
+
+
+
+    }
+
+    .card__underline_decoration {
+        font-size: 13px;
+        text-decoration: underline dashed;
+        color: #22a7e9;
+        cursor: pointer;
+    }
+
+    .card__underline_disabled {
+        font-size: 13px;
+        color: #ffff66;
+    }
+}

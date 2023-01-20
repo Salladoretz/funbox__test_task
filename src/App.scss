@@ -1,0 +1,30 @@
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets//img/background.png'),
+        linear-gradient(rgb(0, 0, 0, 0), 80%, rgba(0, 0, 0, 0.5)),
+        linear-gradient(rgb(0, 0, 0, 0.5), 20%, rgba(0, 0, 0, 0));
+    background-size: cover;
+    background-blend-mode: multiply;
+
+    .app__title {
+        font-family: 'exo2';
+        color: white;
+        font-size: 36px;
+        font-weight: 100;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .app__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 80px;
+        margin-bottom: 3rem;
+    }
+
+}

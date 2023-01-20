@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import css from './Card.module.css'
+import css from './Card.module.scss'
 
 
 const Card = props => {
@@ -40,18 +40,19 @@ const Card = props => {
     if (soldout) {
         background = colors.disabledColor
         underline = <p className={css.card__underline_disabled}>{props.soldoutText}</p>
-    } if (selected && hovered) {
+    } else if (selected && hovered && !soldout) {
         if (counter >= 1) {
             tagline = <p className={css.card__tagline_rejected}>{props.taglineRejected}</p>
         }
         background = colors.selectedHoveredColor
         underline = <p className={css.card__underline}>{props.underlineSelected}</p>
-    } if (selected && !hovered) {
+    } if (selected && !hovered && !soldout) {
         background = colors.selectedColor
         underline = <p className={css.card__underline}>{props.underlineSelected}</p>
-    } if (!selected && hovered) {
+    } if (!selected && hovered && !soldout) {
         background = colors.defaultHoveredColor
     }
+
 
     return (
         <div className={css.card}>
@@ -70,7 +71,11 @@ const Card = props => {
                         <p className={css.card__qty}>{props.present}</p>
                     </div>
                     <div className={css.card__picture}></div>
+
                 </div>
+                {soldout
+                    ? <div className={css.card__soldout}></div>
+                    : ''}
             </div >
             {underline}
             <div
@@ -79,9 +84,6 @@ const Card = props => {
                 <p className={css.card__ovalWeight}>{props.weight.toLocaleString('ru-RU')}</p>
                 <p className={css.card__ovalKg}>кг</p>
             </div>
-            {soldout
-                ? <div className={css.card__soldout}></div>
-                : ''}
         </div>
     )
 }
